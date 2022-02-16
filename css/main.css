@@ -1,0 +1,109 @@
+@import 'null.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* font-family: Lato; */
+
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+/* font-family: 'Taviraj', serif; */
+
+/* =====================Общие записи===================== */
+
+body {
+    font-family: Lato;
+    font-size: 16px;
+    color: #1E212C;
+}
+.wrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+/* ======================================================= */
+
+.content {
+}
+.article {
+    padding-top: 180px;
+    padding-bottom: 30px;
+    max-width: 390px;
+    margin:0 0 0 auto;
+}
+.article *:last-child {
+    margin: 0;
+}
+.article__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.article__subtitle {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+.article__list {
+    margin-bottom: 48px;
+}
+.article__item {
+    color: #424551;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding-left: 30px;
+}    
+.article__item::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../img/icon-list.png)0 0/ 16px  no-repeat;
+    margin-right: 14px;
+    margin-left: -30px;
+    
+
+}
+.article__item:last-child {
+    margin-bottom: 0;
+}
+.article__btn {
+    display: inline-block;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+}
+.article__btn:hover {
+    background: #fff;
+    border: 1px solid #FF3F3A;
+    color: #FF3F3A;
+}
+.article__btn a{
+    padding: 15px 32px;
+    font-size: 14px;
+    line-height: 3.14;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #fff;
+}
+.article__btn a:hover{
+    color: #FF3F3A;
+}
+.name {
+    font-family: 'Taviraj', serif;
+    font-size: 36px;
+    line-height: 1.11;
+    max-width: 390px;
+    margin: 0 0 0 auto;
+    padding-bottom: 20px;
+}
+.name::after {
+    content: '';
+    width: 65px;
+    height: 1px;
+    display: block;
+    background-color: #333;
+    margin-top: 8px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знакомство с псевдоклассами</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="hover">
+                    <h2 class="hover__title title">Привет,я псевдокласс «hover»</h2>
+                    <p class="hover__description description">Я срабатываю при наведению на элемент, чаще все применяюсь к параграфам и кнопкам. Ниже можете увидеть как я выгляжу.</p>
+                    <div class="hover__example">
+                        <div class="hover__paragraph">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae autem, necessitatibus cum eligendi rerum quasi aliquid nihil reiciendis laudantium adipisci ab blanditiis? Harum atque corporis, nam necessitatibus corrupti architecto inventore sapiente eum, ipsum, porro expedita doloremque! Nostrum, sint ducimus. Consequuntur?
+                            </p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae autem, necessitatibus cum eligendi rerum quasi aliquid nihil reiciendis laudantium adipisci ab blanditiis? Harum atque corporis, nam necessitatibus corrupti architecto inventore sapiente eum, ipsum, porro expedita doloremque! Nostrum, sint ducimus. Consequuntur?
+                            </p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae autem, necessitatibus cum eligendi rerum quasi aliquid nihil reiciendis laudantium adipisci ab blanditiis? Harum atque corporis, nam necessitatibus corrupti architecto inventore sapiente eum, ipsum, porro expedita doloremque! Nostrum, sint ducimus. Consequuntur? 
+                            </p>
+                        </div>
+                        <div class="hover__btn ">
+                            <a href="#" class="hover__link btn">button</a>
+                            <a href="#" class="hover__link btn">button hover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="active">
+                    <h2 class="active__title title">Меня зовут «active» и я следующий псевдокласс</h2>
+                    <p class="active__description description">Чаще всего меня используют для ссылок и кнопок. 
+                        Я срабатываю когда на меня нажимают. Давай покажу что умею.</p>
+                    <div class="active__example">
+                        <div class="active__links">
+                            <div>
+                                <a href="https://www.youtube.com/?hl=uk&gl=UA" target="_blank">YouTube - Нажми на меня и поменяю цвет</a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/" target="_blank">Instagram - Нажми на меня и подчеркнусь</a>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/" target="_blank">Facebook - Нажми на меня и у меня появятся границы</a>
+                            </div>
+                        </div>
+                        <div class="active__btn">
+                            <a href="#" class="active__link btn">button</a>
+                            <a href="#" class="active__link btn">button active</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="visited">
+                    <h2 class="visited__title title">Я следующий и моё имя «visited»</h2>
+                    <p class="visited__description description">Применяюсь к ссылкам, уже посещённым пользователем, и задаю для них стилевое оформление. Посети мою ссылку и увидишь мое перевоплощение. Из-за причин приватности, браузеры строго ограничивают стили, которые ты можешь применить ко мне, Применяй только: color, background-color, border-color,outline-color, column-rule-color, fill и stroke.</p>
+                    <div class="visited__example">
+                        <div><a href="#" class="visited__link visited__link-1">Я могу вот так</a></div>
+                        <div><a href="#" class="visited__link visited__link-2">А теперь так</a></div>
+                        <div><a href="#" class="visited__link visited__link-3">Делай со мной что хочешь</a></div>
+                    </div>
+                </div>
+                <div class="focus">
+                    <h2 class="focus__title title">Привет, я «focus», а тебя как зовут?</h2>
+                    <p class="focus__description description">Я определяю стиль для элемента получающего фокус. Чтобы увидеть меня используй клавишу TAB </p>
+                    <div class="focus__example">
+                        <a href="#" class="focus__btn btn">
+                            focus button
+                        </a>
+                        <div class="focus__text">
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laudantium reiciendis! Mollitia nostrum eius soluta vero, rem nesciunt impedit accusantium non repudiandae alias sed neque at natus sint explicabo eos! Exercitationem amet facere obcaecati odio neque! Voluptatum placeat at vitae! Voluptatibus expedita dolore cupiditate, sequi tenetur ipsum quod quos voluptatem.</a>
+                        </div>
+                        
+                        <div class="focus__input">
+                            <input type="text" placeholder="Нажми">
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <h2 class="order__title title">Псевдоклассы положения в коде</h2>
+                    <div class="order__example">
+                        <div class="order__first">
+                            <p class="order__subtitle">Обращение к первому элементу в блоке</p>
+                            <p> :first-child { свойство:значение;}</p>
+                            <p> :first-of-type { свойство:значение;}</p>
+                        </div>
+                        <div class="order__last">
+                            <p class="order__subtitle">Обращение к последнему элементу в блоке</p>
+                            <p> :last-child { свойство:значение;}</p>
+                            <p> :last-of-type { свойство:значение;}</p>
+                        </div>
+                        <div class="order__nth">
+                            <p class="order__subtitle">Обращение к конкретным элементам в блоке</p>
+                            <p> :nth-child(1) { свойство:значение;}</p>
+                            <p> :nth-child(2) { свойство:значение;}</p>
+                            <p> :nth-of-type(1) { свойство:значение;}</p>
+                            <p> :nth-of-type(2) { свойство:значение;}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-letter">
+                    <h2 class="line-letter__title title">Псевдоэлементы :first-line и :first-letter</h2>
+                    <p class="line-letter__description description">Псевдоэлемент :first-line задает стиль 
+                        первой строки текста. Псевдоэлемент :first-letter определяет стиль 
+                        первого символа в тексте элемента</p>
+                    <div class="line-letter__example">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quis?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil sit aut aperiam distinctio quam tempore aspernatur quod eius ex.</p>
+                    </div>
+                </div>
+                <div class="before-after">
+                    <h2 class="before-after__title title">Король и Королева псевдоэлементов :before и :after</h2>
+                    <div class="before-after__description description"><p>:before применяется для отображения желаемого контента ДО элемента, к которому он добавляется.</p> <p>:after используется для вывода желаемого контента ПОСЛЕ элемента, к которому он добавляется.</p></div>
+                    <div class="before-after__example">
+                            <ul class="before-after__list">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+</body>
+</html>
